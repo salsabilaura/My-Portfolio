@@ -33,26 +33,66 @@ p {
 }
 
 /*Navigasi*/
-nav{
+/* ================================
+   MOBILE NAVIGATION
+================================ */
+
+nav {
     position: fixed;
-    width: 75%;
-    right: 0;
     top: 0;
+    left: 0;
+
+    width: 100%;
     height: 100vh;
-    flex-direction: column;
-    background: var(--background);
-    z-index: 9;
-    transform: translateX(100%); 
-    transition: .4s ease-in-out;
-}
-nav ul {
-    height : 100vh;
+
+    background: var(--backgroundGradient);
+
+    z-index: 1000;
+
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+
+    display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
 }
 
-.nav-active {
+nav ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+
+    width: 100%;
+    height: auto;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    transition: 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #ce84dd;
+    border-bottom: none;
+}
+
+
+/* MENU OPEN */
+
+nav.nav-active {
     transform: translateX(0);
 }
 
@@ -136,6 +176,266 @@ footer {
     }
 }
 
+}
+
+/* =========================================
+   PROJECT RESPONSIVE
+========================================= */
+
+@media screen and (max-width: 1200px) {
+
+    .projects-container {
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 850px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-image {
+        height: 280px;
+    }
+
+    .modal-content {
+        padding: 1rem;
+    }
+
+    .modal-image-container {
+        height: 450px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    #portfolios {
+        padding: 5rem 0;
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-image {
+        height: 220px;
+    }
+
+    .modal-image-container {
+        height: 350px;
+    }
+
+    .modal-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .modal-links {
+        flex-direction: column;
+    }
+
+    .project-button {
+        text-align: center;
+    }
+
+}
+
+/* ========================================
+CERTIFICATION RESPONSIVE
+======================================== */
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+
+.certification-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+
+#certification {
+    padding: 4rem 0;
+}
+
+.certification-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.certification-card {
+    border-radius: 8px;
+}
+
+}
+
+/* =========================================================
+   SKILLS & TOOLS RESPONSIVE
+========================================================= */
+
+@media screen and (max-width: 1200px) {
+
+    .toolkit-container {
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .toolkit-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+    #toolkit {
+        padding: 4rem 0;
+    }
+
+    .toolkit-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .tool-card {
+        min-height: 150px;
+        padding: 1rem;
+    }
+
+    .tool-icon {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 0.75rem;
+    }
+
+    .tool-card h3 {
+        font-size: 0.9rem;
+    }
+
+    .tool-card p {
+        font-size: 0.7rem;
+    }
+
+}
+
+
+
+/* =========================================================
+   CONTACT RESPONSIVE
+========================================================= */
+
+@media screen and (max-width: 900px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+    }
+
+    .contact-intro {
+        padding-top: 0;
+    }
+
+    .contact-intro > p {
+        max-width: 650px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    #contact {
+        padding: 4rem 0;
+    }
+
+    .contact-container {
+        width: 90%;
+
+        gap: 2rem;
+    }
+
+    .contact-form-container {
+        padding: 1.3rem;
+
+        border-radius: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.8rem;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+
+}
+
+
+/* ========================================
+   CONTACT RESPONSIVE
+======================================== */
+
+@media screen and (max-width: 850px) {
+
+    .contact-container {
+        width: 90%;
+    }
+
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .contact-info-item {
+        gap: 0.8rem;
+    }
+
+    .contact-info-icon {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+
+        font-size: 1rem;
+    }
+
+    .contact-info-item p {
+        font-size: 0.85rem;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
 
 }
 
