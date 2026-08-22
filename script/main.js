@@ -1,22 +1,35 @@
+const burger = document.querySelector(".burger");
+const nav = document.querySelector("nav");
+
+
 // =========================================
-// RESPONSIVE NAVIGATION
+// MOBILE NAVIGATION
 // =========================================
 
-document.addEventListener("DOMContentLoaded", () => {
+burger.addEventListener("click", () => {
 
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector("nav");
+    nav.classList.toggle("nav-active");
 
-    if (burger && nav) {
+    burger.classList.toggle("toggle-burger");
 
-        burger.addEventListener("click", () => {
+});
 
-            nav.classList.toggle("nav-active");
-            burger.classList.toggle("toggle-burger");
 
-        });
+// CLOSE MOBILE NAVIGATION AFTER CLICKING LINK
 
-    }
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach((link) => {
+
+    link.addEventListener("click", () => {
+
+        nav.classList.remove("nav-active");
+
+        burger.classList.remove("toggle-burger");
+
+    });
+
+});
 
 
 // =========================================
@@ -58,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "SIMPNOTE",
 
             description:
-    "A note-taking web application with search, dark and light mode, archive functionality, and user authentication features. Developed as a project during my internship experience.",
+    "A note-taking web application with search, dark and light mode, archive functionality, and user authentication features. Developed as a project during my internship experience."
 
             images: [
                 "./img/simpnote/Simpnote_0(1).png",
