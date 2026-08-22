@@ -1,21 +1,22 @@
-const burger = document.querySelector(".burger");
-const nav = document.querySelector("nav");
-
-
 // =========================================
 // MOBILE NAVIGATION
 // =========================================
 
+const burger = document.querySelector(".burger");
+const nav = document.querySelector("nav");
+
+
+// OPEN / CLOSE BURGER MENU
+
 burger.addEventListener("click", () => {
 
     nav.classList.toggle("nav-active");
-
     burger.classList.toggle("toggle-burger");
 
 });
 
 
-// CLOSE MOBILE NAVIGATION AFTER CLICKING LINK
+// CLOSE MENU AFTER CLICKING NAV LINK
 
 const navLinks = document.querySelectorAll("nav a");
 
@@ -24,14 +25,11 @@ navLinks.forEach((link) => {
     link.addEventListener("click", () => {
 
         nav.classList.remove("nav-active");
-
         burger.classList.remove("toggle-burger");
 
     });
 
 });
-
-
 // =========================================
 // PROJECT DATA
 // =========================================
