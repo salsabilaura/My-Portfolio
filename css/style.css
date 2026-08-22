@@ -114,7 +114,7 @@ a {
 
 .burger {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 30px;
     right: 25px;
     z-index: 1001;
@@ -206,7 +206,7 @@ nav ul li a {
 }
 
 .hero-name span {
-    color: #642570;
+    color: #924aa0;
 }
 
 
@@ -222,7 +222,7 @@ nav ul li a {
     padding-left: 40px;
     width: fit-content;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 .pre-title::before {
@@ -269,7 +269,7 @@ nav ul li a {
 .service h4 {
     margin: 1.5rem 0;
     font-weight: 500;
-    font-size: 1.05rem;
+    font-size: 2rem;
 }
 
 .service-icon {
@@ -1667,7 +1667,7 @@ object-fit: contain;
 
 .skills-tools-container .section-description {
     max-width: 650px;
-    color: #d6d6d6;
+    color: #0c0b0b;
     margin-top: -2.5rem;
 }
 

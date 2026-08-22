@@ -340,8 +340,60 @@ CERTIFICATION RESPONSIVE
     .tool-card p {
         font-size: 0.7rem;
     }
+}
+@media screen and (max-width: 576px) {
+
+    #skills-tools {
+        padding: 4rem 0;
+        overflow: hidden;
+    }
+
+    .skills-tools-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .skills-tools-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .skills-tools-card {
+        width: 100%;
+        min-width: 0;
+        padding: 1.5rem;
+    }
+
+    .tools-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .tool-item {
+        width: 100%;
+        min-width: 0;
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        padding: 0.8rem;
+    }
+
+    .tool-item i {
+        flex-shrink: 0;
+        font-size: 1.8rem;
+    }
+
+    .tool-item span {
+        font-size: 0.85rem;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
 
 }
+
 
 
 
@@ -440,3 +492,66 @@ CERTIFICATION RESPONSIVE
 }
 
 
+/* =========================================
+   MOBILE OVERFLOW FIX
+========================================= */
+
+@media screen and (max-width: 576px) {
+
+    /* Skills & Tools */
+    #skills-tools {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .skills-tools-container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 17px;
+        padding-right: 17px;
+        box-sizing: border-box;
+    }
+
+    .skills-tools-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        box-sizing: border-box;
+    }
+
+    .tool-card {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+
+    /* Education */
+    .skills-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .skills-left,
+    .skills-right {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .skills-right {
+        margin: 0;
+    }
+
+}
+
+
+/* Prevent horizontal scrolling */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
