@@ -555,3 +555,25 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+@media screen and (max-width: 825px) {
+
+    .burger {
+        display: flex;
+        position: relative;
+        z-index: 9999;
+        cursor: pointer;
+        pointer-events: auto;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .burger div {
+        pointer-events: none;
+    }
+
+    nav {
+        z-index: 9998;
+    }
+
+}

@@ -5,11 +5,9 @@
 const burger = document.querySelector(".burger");
 const nav = document.querySelector("nav");
 
-
-// OPEN / CLOSE BURGER MENU
 if (burger && nav) {
 
-    burger.addEventListener("click", () => {
+    burger.addEventListener("click", function () {
 
         nav.classList.toggle("nav-active");
         burger.classList.toggle("toggle-burger");
@@ -19,25 +17,20 @@ if (burger && nav) {
 }
 
 
-// CLOSE MOBILE MENU AFTER CLICKING NAV LINK
+// CLOSE MENU AFTER CLICKING NAV LINK
+
 const navLinks = document.querySelectorAll("nav a");
 
-navLinks.forEach((link) => {
+navLinks.forEach(function (link) {
 
-    link.addEventListener("click", () => {
+    link.addEventListener("click", function () {
 
-        if (nav) {
-            nav.classList.remove("nav-active");
-        }
-
-        if (burger) {
-            burger.classList.remove("toggle-burger");
-        }
+        nav.classList.remove("nav-active");
+        burger.classList.remove("toggle-burger");
 
     });
 
 });
-
 
 // =========================================
 // PROJECT DATA
