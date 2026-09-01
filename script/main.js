@@ -546,3 +546,49 @@ window.addEventListener("beforeunload", () => {
     }
 
 });
+
+/* =========================================================
+   SCROLL REVEAL ANIMATION
+========================================================= */
+
+const revealElements = document.querySelectorAll(
+    ".section-heading, " +
+    ".project-card, " +
+    ".certification-card, " +
+    ".skills-tools-card, " +
+    ".tool-card, " +
+    ".contact-container, " +
+    ".education"
+);
+
+revealElements.forEach((element) => {
+    element.classList.add("reveal");
+});
+
+
+const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+                observer.unobserve(entry.target);
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+
+revealElements.forEach((element) => {
+
+    revealObserver.observe(element);
+
+});
