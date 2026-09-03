@@ -62,7 +62,9 @@ const projects = {
         tags: [
             "HTML",
             "CSS",
-            "JavaScript"
+            "JavaScript",
+            "React Js",
+            "Node.js"
         ]
 
     },
@@ -88,9 +90,11 @@ const projects = {
         ],
 
         tags: [
-            "React",
-            "Bootstrap",
-            "JavaScript"
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React Js",
+            "Node.js"
         ]
 
     },
@@ -112,11 +116,12 @@ const projects = {
         ],
 
         tags: [
-            "React",
+            "React JS",
             "JavaScript",
             "Python",
             "OCR",
-            "NER"
+            "NER",
+            "Node.Js"
         ]
 
     },
