@@ -42,17 +42,21 @@ const projects = {
 
         number: "01",
 
-        title: "Interior Design Website",
+        title: "MODO INTERIORS - Company Profile",
 
         description:
-            "A modern interior design website focused on presenting interior concepts, room selections, and customization features through a clean and responsive interface.",
+            "A modern interior design website featuring a brand-focused Home page, company information and services on the About page, and an interactive Catalog for exploring material categories and design variations through a clean and responsive interface.",
 
         images: [
-            "./img/interior/Interior_1.png",
-            "./img/interior/Interior_2.png",
-            "./img/interior/Interior_3.png",
-            "./img/interior/Interior_4.png",
-            "./img/interior/Interior_5.png"
+            "./img/modo/homepage-01.png",
+            "./img/modo/homepage-02.png",
+            "./img/modo/homepage-03.png",
+            "./img/modo/aboutmodo-01.png",
+            "./img/modo/aboutmodo-02.png",
+            "./img/modo/katalog-01.png",
+            "./img/modo/katalog-02.png",
+            "./img/modo/katalog-03.png",
+            
         ],
 
         tags: [
