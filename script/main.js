@@ -38,9 +38,34 @@ navLinks.forEach(function (link) {
 
 const projects = {
 
-    interior: {
+    seminfo: {
 
         number: "01",
+
+        title: "Seminfo",
+
+        description:
+            " A web application developed as a final-year project that automatically extracts and organizes seminar information from poster images using OCR and Transformer-based NER. The NER model was fine-tuned to improve the recognition of seminar-specific entities",
+
+        images: [
+            "./img/seminfo/Seminfo_0(1).png",
+            "./img/seminfo/Seminfo_1(1).png",
+            "./img/seminfo/Seminfo_2(1).png"
+        ],
+
+        tags: [
+            "Deep Learning",
+            "Python",
+            "OCR",
+            "NER",
+            "Fast API"
+        ]
+
+    },
+
+    interior: {
+
+        number: "02",
 
         title: "MODO INTERIORS - Company Profile",
 
@@ -72,7 +97,7 @@ const projects = {
 
     simpnote: {
 
-        number: "02",
+        number: "03",
 
         title: "SIMPNOTE",
 
@@ -95,32 +120,6 @@ const projects = {
             "JavaScript",
             "React Js",
             "Node.js"
-        ]
-
-    },
-
-
-    seminfo: {
-
-        number: "03",
-
-        title: "Seminfo",
-
-        description:
-            " A web application developed as a final-year project that automatically extracts and organizes seminar information from poster images using OCR and Transformer-based NER. The NER model was fine-tuned to improve the recognition of seminar-specific entities",
-
-        images: [
-            "./img/seminfo/Seminfo_0(1).png",
-            "./img/seminfo/Seminfo_1(1).png",
-            "./img/seminfo/Seminfo_2(1).png"
-        ],
-
-        tags: [
-            "Deep Learning",
-            "Python",
-            "OCR",
-            "NER",
-            "Fast API"
         ]
 
     },
