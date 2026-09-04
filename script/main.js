@@ -107,7 +107,7 @@ const projects = {
         title: "Seminfo",
 
         description:
-            "A web application that extracts seminar information from poster images using Optical Character Recognition (OCR) and Named Entity Recognition (NER).",
+            " A web application developed as a final-year project that automatically extracts and organizes seminar information from poster images using OCR and Transformer-based NER. The NER model was fine-tuned to improve the recognition of seminar-specific entities",
 
         images: [
             "./img/seminfo/Seminfo_0(1).png",
@@ -116,12 +116,11 @@ const projects = {
         ],
 
         tags: [
-            "React JS",
-            "JavaScript",
+            "Deep Learning",
             "Python",
             "OCR",
             "NER",
-            "Node.Js"
+            "Fast API"
         ]
 
     },
